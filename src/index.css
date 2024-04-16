@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-list-disc > li::before {
+    color: #your-color-here; /* Change this to your desired color */
+  }
+  
+h1, h2, h3{
+font-family: young_serif;
+font-weight: bold;
+}
+
+p{
+font-size: 16px;
+}

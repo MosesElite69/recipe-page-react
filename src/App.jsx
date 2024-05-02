@@ -1,28 +1,29 @@
-
 import Footer from "./ui/Footer";
 
 export default function App() {
   return (
     <>
-      <img
-        src="/image-omelette.jpeg"
-        alt="omelette"
-        height={440}
-        width={400}
-      />
-      <main className="w-[80%] mx-auto ">
+      <div className="mx-auto">
+        <img
+          src="/image-omelette.jpeg"
+          alt="omelette"
+          className="w-[100%] md:w-[80%] md:h-[420px] md:mt-2 mx-auto md:rounded-md"
+        />
+      </div>
+      <main className="w-[80%] mx-auto">
         <h1 className="text-[30px] text-left font-bold text-darkCharcoal ">
           Simple Omelette Recipe
         </h1>
-
-        <header className="m-3 text-[14px]">
+        <header className="m-3 text-[14px] mx-auto">
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
         </header>
-        <section className="border-solid border bg-roseWhite p-3 rounded-md  ">
-          <h3 className="text-darkRaspberry text-[20px] mb-2">Preparation time</h3>
-          <ul className="list-disc custom-list-disc pl-5 ">
+        <section className=" bg-roseWhite p-3 rounded-md  ">
+          <h3 className="text-darkRaspberry text-[20px] mb-2">
+            Preparation time
+          </h3>
+          <ul className="list-disc custom-list-disc pl-5 p-3 ">
             <li className="pl-3 m-1">
               <strong>Total</strong>: Approximately 10 minutes
             </li>
@@ -34,7 +35,7 @@ export default function App() {
             </li>
           </ul>
         </section>
-        <h2 className="text-nutmeg text-3xl m-2">Ingredients</h2>
+        <h2 className="text-nutmeg text-3xl m-2 mt-5">Ingredients</h2>
         <ul className="list-disc m-2 p-2">
           <li className="m-1">2-3 large eggs</li>
           <li className="m-1">Salt, to taste</li>
@@ -82,13 +83,43 @@ export default function App() {
           </li>
         </ol>
         <hr />
-        <h1>Nutrition</h1>
+        <h1 className="text-nutmeg text-3xl m-2">Nutrition</h1>
 
-        <p>
+        <p className="m-3 text-[14px] mx-auto font-semibold">
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
-        <section>Calories 277kcal Carbs 0g Protein 20g Fat 22g</section>
+        <section>
+          <table className="w-full mx-auto">
+            <tr className="flex justify-between p-1">
+              <td className="text-left">Calories</td>
+              <td className="text-right">
+                <span className="text-nutmeg font-bold">277kcal</span>
+              </td>
+            </tr>
+            <hr />
+            <tr className="flex justify-between p-1">
+              <td className="text-left">Carbs</td>
+              <td className="text-right">
+                <span className="text-nutmeg font-bold">0g</span>
+              </td>
+            </tr>
+            <hr />
+            <tr className="flex justify-between p-1">
+              <td className="text-left">Protein</td>
+              <td className="text-right">
+                <span className="text-nutmeg font-bold">20g</span>
+              </td>
+            </tr>
+            <hr />
+            <tr className="flex justify-between p-1">
+              <td className="text-left">Fat</td>
+              <td className="text-right">
+                <span className="text-nutmeg font-bold">22g</span>
+              </td>
+            </tr>
+          </table>
+        </section>
       </main>
       <Footer />
     </>

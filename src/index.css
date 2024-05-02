@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .custom-list-disc > li::before {
-    color: #your-color-here; /* Change this to your desired color */
+    color: #your-color-here;
   }
   
 h1, h2, h3{

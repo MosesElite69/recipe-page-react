@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/MosesElite69/recipe-page-react)
-- Live Site URL: [Live site URL here](https://recipe-page-next.netlify.app/)
+- Live Site URL: [Live site URL here](https://recipe-page-react-ten.vercel.app)
 
 ## My process
 
